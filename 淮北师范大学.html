@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>淮北师范大学</title>
+    <style>
+        html body {
+            background-color: rgb(218, 216, 215);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .zshangmian {
+            width: 100% height: 35px;
+            background-color: rgb(177, 172, 172);
+
+        }
+
+        .zshangmian p {
+            display: block color: rgb(49, 48, 48);
+            padding-top: 6px;
+            padding-left: 180px;
+            font-size: 14px;
+        }
+
+        .zhongjian {
+            width: 100%;
+            height: 111.31px;
+        }
+
+        /* .middle {
+            width: 100%;
+            height: 35px;
+            background-color: rgb(138, 5, 5);
+            margin-top: 0;
+        }
+
+        .middle a {
+            text-decoration: none;
+            display: inline-block;
+            height: 35px;
+            padding: 0 40px;
+            font-size: 16px;
+            line-height: 35px;
+            color: white;
+
+        }
+
+        .middle a:hover {
+            background-color: white;
+            color: red;
+        } */
+        .middle {
+            float: left;
+            width: 100%;
+            height: 35px;
+            background-color: rgb(138, 5, 5);
+            margin-top: 0;
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .middle ul li {
+            /* margin-left: 80px; */
+            float: left;
+            /* padding-left: 45px; */
+        }
+
+        .middle ul li a {
+            display: block;
+            width: 100px;
+            height: 35px;
+            font-size: 16px;
+            text-align: center;
+            line-height: 35px;
+            color: white;
+
+        }
+
+        .middle ul li a:hover {
+            background-color: white;
+            color: red;
+        }
+
+        .middle ul li ul {
+            position: absolute;
+            /* padding-left: 45px; */
+            display: none;
+        }
+
+        .middle ul li ul li {
+            float: none;
+            /* padding:0 45px; */
+        }
+
+        .middle ul li ul li a {
+            border-right: none;
+            border-top: 1px dotted #ccc;
+            background-color: brown;
+        }
+
+        .middle ul li:hover ul {
+            display: block;
+        }
+
+        .middhou {
+            width: 1315px;
+            margin: 0 auto;
+        }
+
+        .middhou img {
+            padding-left: 6px;
+        }
+
+        .bottom {
+            width: 1300px;
+            overflow: hidden;
+            background-color: rgb(252, 252, 252);
+            margin: 0 auto;
+        }
+
+        .bottom .left {
+            float: left;
+            width: 350px;
+            overflow: hidden;
+            background-color: rgb(252, 252, 252);
+        }
+
+        .bottom .left img {
+            padding-top: 10px;
+            padding-left: 10px;
+        }
+
+        .bottom .left a {
+            height: 30px;
+            text-align: center;
+            display: block;
+            text-decoration: none;
+            font-size: 16px;
+            color: rgb(109, 106, 103);
+        }
+
+        .bottom .left a:hover {
+            color: red;
+        }
+
+        .bottom .zhong {
+            float: left;
+            width: 450px;
+            height: 500px;
+            background-color: rgb(252, 252, 252);
+            margin-left: 20px;
+        }
+
+        .bottom .zhong .zhongshang {
+            border-bottom: 1px solid rgb(167, 164, 164);
+            padding-top: 10px;
+        }
+
+        .bottom .zhong .zhongshang a {
+            display: inline-block;
+            height: 50px;
+            width: 120px;
+            background-color: rgb(184, 180, 180);
+            text-decoration: none;
+            text-align: center;
+            line-height: 50px;
+            color: black;
+
+        }
+
+        .bottom .zhong a:hover {
+            background-color: brown;
+            color: white;
+        }
+
+        .bottom .zhong .zhongxia .zhongxialeft {
+            margin-top: 0px;
+            float: left;
+            width: 260px;
+            padding-left: 10px;
+        }
+
+        .bottom .zhong .zhongxia .zhongxialeft ul li {
+            list-style: none;
+        }
+
+        .bottom .zhong .zhongxia .zhongxialeft ul li a {
+            background-color: rgb(252, 252, 252);
+            display: block;
+            text-decoration: none;
+            padding-left: 0;
+            width: 280px;
+            height: 41px;
+            /* list-style: none; */
+            /* padding-left: 20px; */
+            font-size: 16px;
+            color: rgb(109, 106, 103);
+        }
+
+        .bottom .zhong .zhongxia .zhongxialeft ul li a:hover {
+            color: red;
+        }
+
+        .bottom .zhong .zhongxia .zhongxiaright {
+            width: 150px;
+            background-color: rgb(252, 252, 252);
+            float: right;
+        }
+
+        .bottom .zhong .zhongxia .zhongxiaright ul li {
+            /* width: 120px; */
+            padding-left: 50px;
+            list-style: none;
+            height: 41px;
+            font-size: 16px;
+            color: rgb(109, 106, 103);
+        }
+
+        .bottom .right {
+            padding-top: 10px;
+            /* padding-right: 10px; */
+            float: left;
+            width: 450px;
+            height: 500px;
+            margin-left: 20px;
+            background-color: rgb(252, 252, 252);
+
+        }
+
+        .bottom .right .rightshang {
+            border-bottom: 1px solid rgb(167, 164, 164);
+            padding-top: 10px;
+            height: 40px;
+            background-color: #f8f8f8;
+
+        }
+
+        .bottom .right .rightshang ul li {
+            display: inline-block;
+            /* padding-left: 50px; */
+
+        }
+
+        .bottom .right .rightshang a {
+            padding-left: 20px;
+            line-height: 50px;
+            height: 40px;
+            color: black;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .bottom .right .rightshang a:hover {
+            color: red;
+        }
+
+        /* .bottom .right .rightxia {
+            background-color: #f8f8f8;
+        } */
+        .bottom .right .rightxia ul li a {
+
+            font-size: 16px;
+            color: rgb(109, 106, 103);
+        }
+
+        .xiaxias {
+            width: 100%;
+            height: 20px;
+            background-color: rgb(218, 216, 215);
+        }
+
+        .xiaxia {
+            background-color: rgb(252, 252, 252);
+            overflow: hidden;
+            width: 1300px;
+            margin: 0 auto;
+        }
+
+        .xiaxia h3 {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+
+        .xiaxia span {
+            display: inline-block;
+            height: 40px;
+            width: 120px;
+            line-height: 45px;
+            text-align: center;
+            /* padding-left: 10px; */
+            background-color: brown;
+            color: white;
+        }
+
+        .xiaxia h3 a {
+            font-size: 15px;
+            font-weight: 400;
+            text-decoration: none;
+            padding-left: 30px;
+            color: rgb(109, 106, 103);
+
+        }
+
+        .xiaxia h3 a:hover {
+            color: red;
+        }
+
+        .zdibu {
+            width: 100%;
+            height: 100px;
+            background-color: brown;
+        }
+
+        .zdibu .jieshu {
+            padding-top: 10px;
+            width: 800px;
+            height: 90px;
+            margin: 0 auto;
+            background-color: brown;
+        }
+
+        .zdibu .jieshu p {
+            /* padding-top: 10px; */
+            color: white;
+            text-align: center;
+        }
+
+        /* .xiaxia .xiaxiaxiao {
+            background-color: #f8f8f8;
+           padding-left: 345px;
+        width: 800px;
+            border-bottom: 1px solid #dfdfdf;
+    height: 33px;
+    margin: 14px 14px;
+        } */
+        .zleft {
+            margin-left: 300px;
+            float: left;
+            height: 100px;
+            width: 75px;
+            background-color: brown;
+        }
+
+        .zright {
+            margin-right: 300px;
+            float: right;
+            height: 100px;
+            width: 75px;
+            background-color: brown;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="zshangmian">
+        <p>欢迎来到淮北师范大学！</p>
+    </div>
+
+    <div class="zhongjian">
+        <img src="2.png" width="100%">
+    </div>
+
+    <div class="middle">
+        <ul>
+            <li> <a href="#" style="margin-left:300px">网站首页</a>
+
+            </li>
+            <li><a href="#">学校概括</a>
+                <ul>
+                    <li><a href="#">勇敢牛牛</a></li>
+                    <li><a href="#">不怕困难</a></li>
+                </ul>
+            </li>
+            <li><a href="#">教学机构</a>
+                <ul>
+                    <li><a href="#">勇敢牛牛</a></li>
+                    <li><a href="#">不怕困难</a></li>
+                    <li><a href="#">勇敢牛马</a></li>
+                    <li><a href="#">不怕困难</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">管理机构</a>
+                <ul>
+                    <li><a href="#">勇敢牛牛</a></li>
+                    <li><a href="#">不怕困难</a></li>
+                </ul>
+            </li>
+            <li><a href="#">学术机构</a>
+                <ul>
+                    <li><a href="#">勇敢牛牛</a></li>
+                    <li><a href="#">不怕困难</a></li>
+                    <li><a href="#">勇敢牛马</a></li>
+                    <li><a href="#">不怕困难</a></li>
+                </ul>
+            </li>
+            <li><a href="#">招生就业</a>
+                <ul>
+                    <li><a href="#">勇敢牛牛</a></li>
+                    <li><a href="#">不怕困难</a></li>
+                </ul>
+            </li>
+            <li><a href="#">学生工作</a>
+                <ul>
+                    <li><a href="#">勇敢牛牛</a></li>
+                    <li><a href="#">不怕困难</a></li>
+                    <li><a href="#">勇敢牛马</a></li>
+                    <li><a href="#">不怕困难</a></li>
+                </ul>
+            </li>
+            <li><a href="#">信息公开</a>
+                <ul>
+                    <li><a href="#">勇敢牛牛</a></li>
+                    <li><a href="#">不怕困难</a></li>
+                </ul>
+            </li>
+            <li><a href="#">公共服务</a>
+                <ul>
+                    <li><a href="#">勇敢牛牛</a></li>
+                    <li><a href="#">不怕困难</a></li>
+                    <li><a href="#">勇敢牛马</a></li>
+                    <li><a href="#">不怕困难</a></li>
+                </ul>
+            </li>
+            <li> <a href="#">信息门户</a>
+                <ul>
+                    <li><a href="#">勇敢牛牛</a></li>
+                    <li><a href="#">不怕困难</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="middhou">
+        <img src="1.png" width="1300px">
+    </div>
+
+    <div class="bottom">
+        <div class="left">
+            <img src="3.jpg" width="100%">
+            <h4>【中国时事新闻网】</h4>
+            <a href="#">..众志成城，河南一定会从暴雨中解脱出来</a>
+        </div>
+
+        <div class="zhong">
+            <div class="zhongshang">
+                <a href="#">学校新闻</a>
+                <a href="#">校招情况</a>
+                <a href="#">八卦绯闻</a>
+            </div>
+            <br>
+            <div class="zhongxia">
+                <div class="zhongxialeft">
+                    <ul>
+                        <li><a href="http://www/baidu.com">.习近平总书记在中央发表重要讲话</a></li>
+                        <li><a href="http://www/baidu.com">.习近平总书记在中央发表重要讲话</a></li>
+                        <li><a href="http://www/baidu.com">.习近平总书记在中央发表重要讲话</a></li>
+                        <li><a href="http://www/baidu.com">.习近平总书记在中央发表重要讲话</a></li>
+                        <li><a href="http://www/baidu.com">.习近平总书记在中央发表重要讲话</a></li>
+                        <li><a href="http://www/baidu.com">.习近平总书记在中央发表重要讲话</a></li>
+                        <li><a href="http://www/baidu.com">.习近平总书记在中央发表重要讲话</a></li>
+                        <li><a href="http://www/baidu.com">.习近平总书记在中央发表重要讲话</a></li>
+                        <li><a href="http://www/baidu.com">.习近平总书记在中央发表重要讲话</a></li>
+                        <li><a href="http://www/baidu.com">.习近平总书记在中央发表重要讲话</a></li>
+                        <li><a href="http://www/baidu.com">.习近平总书记在中央发表重要讲话</a></li>
+                    </ul>
+                </div>
+                <div class="zhongxiaright">
+                    <ul>
+                        <li>10-1</li>
+                        <li>10-1</li>
+                        <li>10-1</li>
+                        <li>10-1</li>
+                        <li>10-1</li>
+                        <li>10-1</li>
+                        <li>10-1</li>
+                        <li>10-1</li>
+                        <li>10-1</li>
+                        <li>10-1</li>
+                        <li>10-1</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="rightshang">
+
+                <a href="#">通知公告</a>
+
+                <a href="#">周工作安排</a>
+
+
+                <div class="rightxia">
+                    <ul>
+                        <li>
+                            <a href="#">2021年春季学期末及暑假主要工作安排一览表</a>
+                        </li>
+                        <li>
+                            <a href="#">第二十周主要工作及会议安排(2021.7.12-7.16)</a>
+                        </li>
+                        <li>
+                            <a href="#">第十九周主要工作及会议安排(2021.7.5-7.9)</a>
+                        </li>
+                        <li>
+                            <a href="#">第十八周主要工作及会议安排(2021.6.28-7.2)</a>
+                        </li>
+                        <li>
+                            <a href="#">第十七周主要工作及会议安排(2021.6.21-6.25)</a>
+                        </li>
+                        <li>
+                            <a href="#">第十六周主要工作及会议安排(2021.6.15-6.18)</a>
+                        </li>
+                        <li>
+                            <a href="#">第十四周主要工作及会议安排(2021.5.31-6.4)</a>
+                        </li>
+                        <li>
+                            <a href="#">2021年春季学期末及暑假主要工作安排一览表</a>
+                        </li>
+                        <li>
+                            <a href="#">2021年春季学期末及暑假主要工作安排一览表</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="xiaxias"></div>
+    <div class="xiaxia">
+        <h3>
+            <span>友情链接</span>
+            <a href="#">教育部</a>
+            <a href="#">安徽省教育厅</a>
+
+        </h3>
+
+    </div>
+    </div>
+    <div class="xiaxias"></div>
+    <div class="zleft">
+        <!-- <div class="zright">
+            <img src="姐姐.jpg" height="100px">
+        </div> -->
+        <img src="姐姐.jpg" height="100px">
+    </div>
+    <div class="zright">
+        <img src="姐姐.jpg" height="100px">
+    </div>
+    <div class="zdibu">
+        <div class="jieshu">
+            <p>版权所有：淮北师范大学 Copyright®2015 皖ICP备15018844号</p>
+            <p>地址：安徽省淮北市东山路100号 邮政编码：235000 网站维护：淮北师范大学网络与信息管理中心</p>
+        </div>
+
+        <!-- <div class="zleft">
+
+</div> -->
+        <!-- <div class="zright">
+
+</div> -->
+
+
+    </div>
+</body>
+
+</html>
